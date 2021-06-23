@@ -1,0 +1,52 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title th:text="${title}"/>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css">
+</head>
+
+<body>
+    <header th:insert="blocks/header::header"></header>
+    <p th:text="'Hello world, ' + ${title} + '!'" />
+<main>
+
+
+    <section class="min-vh-70 o-hidden d-flex flex-column justify-content-center"><br><br>
+        <div class="container">
+            <div class="row justify-content-center text-center align-items-center">
+                <div class="col-xl-8 col-lg-9 col-md-10 layer-3 aos-init aos-animate" data-aos="fade-up" data-aos-delay="500"><br><br>
+                    <h1 class="display-3">
+                       Добро пожаловать<br>На наш сайт
+                    </h1>
+                    <div class="mb-4">
+                        <p class="lead px-xl-5">
+                            Для просмотра новостей перейдите во вкладку "Последние новости"
+                        </p>
+                    </div>
+                    <a href="/last_news" class="btn btn-lg btn-white mx-1" data-smooth-scroll="">Читать новости</a>
+                    <a href="https://themes.getbootstrap.com/product/leap-multipurpose-bootstrap-theme/" class="btn btn-lg btn-primary-3 mx-1"></a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <div class="my-3 p-3 bg-body rounded shadow-sm">
+        <h6 class="border-bottom pb-2 mb-0">Разработчик</h6>
+        <div class="d-flex text-muted pt-3">
+            <svg class="bd-placeholder-img flex-shrink-0 me-2 rounded" width="32" height="32" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 32x32" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#007bff"></rect><text x="50%" y="50%" fill="#007bff" dy=".3em">32x32</text></svg>
+
+            <div class="pb-3 mb-0 small lh-sm border-bottom w-100">
+                <div class="d-flex justify-content-between">
+                    <strong class="text-gray-dark">Герман</strong>
+                    <a href="#"></a>
+                </div>
+                <span class="d-block">Telegram:@dedinside_1000_7</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- FOOTER -->
+    <div th:insert="blocks/footer::footer"></div>
+</main>
+</body>
+</html>
